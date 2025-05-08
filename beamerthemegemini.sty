@@ -15,8 +15,12 @@
 % Fonts
 % ====================
 
-\newfontfamily\Fira[Ligatures=TeX]{droidsans}
-\newfontfamily\Inter[Ligatures=TeX]{Inter}
+\newfontfamily\Univers[Ligatures=TeX,
+                    Path=fonts/,
+                    Extension=.ttf,
+                    UprightFont=*-Regular,
+                    BoldFont=*-Bold]{Univers}
+\newfontfamily\Lato[Ligatures=TeX]{Inter}
 
 \usefonttheme{professionalfonts}
 
@@ -27,14 +31,14 @@
   BoldItalicFont=*-Italic
 ]
 
-\setbeamerfont{headline}{family=\Fira}
+\setbeamerfont{headline}{family=\Univers}
 \setbeamerfont{headline title}{size=\Huge,series=\bfseries}
 \setbeamerfont{headline author}{size=\Large}
 \setbeamerfont{headline institute}{size=\normalsize}
-\setbeamerfont{block title}{family=\Fira,size=\large,series=\bfseries}
-\setbeamerfont{heading}{family=\Inter,series=\bfseries}
+\setbeamerfont{block title}{family=\Univers,size=\large,series=\bfseries}
+\setbeamerfont{heading}{family=\Lato,series=\bfseries}
 \setbeamerfont{caption}{size=\small}
-\setbeamerfont{footline}{family=\Fira,size=\normalsize}
+\setbeamerfont{footline}{family=\Univers,size=\normalsize}
 
 % ====================
 % Macros
